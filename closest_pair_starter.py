@@ -140,11 +140,9 @@ def simulate():
   plt.plot(ns, n2s, 'r--', ns, nlog2ns, 'g--', ns, nlogns, 'b--')
   plt.show()
 
-"""
 def main():
   # simulate()
   pass
 
 if __name__ == "__main__":
   main()
-"""
