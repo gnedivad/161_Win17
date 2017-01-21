@@ -1,8 +1,4 @@
 #!/usr/bin/python
-"""
-set sw=2 sts=2
-"""
-
 import matplotlib.pyplot as plt
 import numpy as np
 import random
