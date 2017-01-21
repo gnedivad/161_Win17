@@ -112,7 +112,7 @@ def find_closest_pair_nlogn_helper(A):
     return find_closest_pair_n2(A)
 
   #############################################################################
-  # TODO: ~10 lines (should be very similar to above                          #
+  # TODO: ~10 lines (should be very similar as above)                         #
   #############################################################################
 
 
