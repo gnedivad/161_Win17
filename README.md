@@ -5,5 +5,6 @@ This repository contains scripts for recitation section for CS 161 in Winter 201
 ```
 $ cd ~/161/
 $ pip install -r requirements.txt
-$ pytest
+$ cd 012017/
+$ pytest tests/test_closest_pair.py
 ```
