@@ -23,6 +23,7 @@ def partition_xs(A, x):
       A_r.append(A_i)
   return A_l, A_r
 
+
 def dist(p1, p2):
   """
   Computes the L2 distance between p1 and p2.
@@ -34,8 +35,16 @@ def dist(p1, p2):
   p = np.array(p1) - np.array(p2)
   return np.linalg.norm(p, 2)
 
+
 def min_of_not_nones(*args):
+  """
+  Returns the minimum value not equal to None.
+
+  Inputs:
+  - args: An arbtirary number of numeric and None values.
+  """
   return min(d for d in args if d is not None)
+
 
 def find_closest_pair_for_strip_n(A_strip, d_lr):
   """
@@ -47,7 +56,13 @@ def find_closest_pair_for_strip_n(A_strip, d_lr):
   - d_lr: An int that represents the smallest distance between points both in
     the left partition or both in the right partition.
   """
-  # TODO
+  n = len(A_strip)
+  d_strip = None
+  #############################################################################
+  # TODO: ~7 lines                                                            #
+  #############################################################################
+
+  return d_strip
 
 
 def find_closest_pair_n2(A):
@@ -79,7 +94,9 @@ def find_closest_pair_nlog2n(A):
   if len(A) <= 3:
     return find_closest_pair_n2(A)
 
-  # TODO
+  #############################################################################
+  # TODO: ~10 lines                                                           #
+  #############################################################################
 
 
 def find_closest_pair_nlogn_helper(A):
@@ -94,7 +111,10 @@ def find_closest_pair_nlogn_helper(A):
   if len(A) <= 3:
     return find_closest_pair_n2(A)
 
-  # TODO
+  #############################################################################
+  # TODO: ~10 lines (should be very similar to above                          #
+  #############################################################################
+
 
 def find_closest_pair_nlogn(A):
   """
@@ -104,7 +124,8 @@ def find_closest_pair_nlogn(A):
   Inputs:
   - A: A list of tuples for which to find the closest pair.
   """
-  # TODO
+  A = sorted(A, key=lambda A_i: A_i[1])
+  return find_closest_pair_nlogn_helper(A)
 
 
 def simulate():
@@ -137,7 +158,7 @@ def simulate():
   plt.show()
 
 def main():
-  # simulate()
+  # simulate()  # uncomment to time these functions!
   pass
 
 if __name__ == "__main__":

@@ -37,6 +37,12 @@ def dist(p1, p2):
 
 
 def min_of_not_nones(*args):
+  """
+  Returns the minimum value not equal to None.
+
+  Inputs:
+  - args: An arbtirary number of numeric and None values.
+  """
   return min(d for d in args if d is not None)
 
 
