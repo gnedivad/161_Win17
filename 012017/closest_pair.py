@@ -1,8 +1,4 @@
 #!/usr/bin/python
-"""
-set sw=2 sts=2
-"""
-
 import matplotlib.pyplot as plt
 import numpy as np
 import random
@@ -27,6 +23,7 @@ def partition_xs(A, x):
       A_r.append(A_i)
   return A_l, A_r
 
+
 def dist(p1, p2):
   """
   Computes the L2 distance between p1 and p2.
@@ -38,8 +35,10 @@ def dist(p1, p2):
   p = np.array(p1) - np.array(p2)
   return np.linalg.norm(p, 2)
 
+
 def min_of_not_nones(*args):
   return min(d for d in args if d is not None)
+
 
 def find_closest_pair_for_strip_n(A_strip, d_lr):
   """
@@ -179,7 +178,7 @@ def simulate():
   plt.show()
 
 def main():
-  # simulate()
+  # simulate()  # uncomment to time these functions!
   pass
 
 if __name__ == "__main__":
